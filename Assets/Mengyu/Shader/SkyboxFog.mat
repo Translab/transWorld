@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SkyboxFog
+  m_Shader: {fileID: 4800000, guid: 7110699abf4aa684eb7672f8745b080e, type: 3}
+  m_ShaderKeywords: _MAPPING_LATITUDE_LONGITUDE_LAYOUT _SUNDISK_HIGH_QUALITY _SWITCH2_ON
+    _SWITCH3_ON _SWITCH4_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BackTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: 8e0f22e766eb54e209ec8aa14af90253, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AtmosphereThickness: 1
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Exponent1: 2.6
+    - _Exponent2: 11.2
+    - _Exponent3: 11.2
+    - _Exponent4: 11.9
+    - _Exposure: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _ImageType: 0
+    - _Layout: 0
+    - _Mapping: 1
+    - _Metallic: 0
+    - _MirrorOnBack: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Rotation: 0
+    - _SkyExponent1: 6
+    - _SkyExponent2: 3
+    - _SkyIntensity: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SunAlpha: 0.1
+    - _SunAltitude: 38
+    - _SunAzimuth: 20
+    - _SunBeta: 0.1
+    - _SunDisk: 2
+    - _SunIntensity: 1
+    - _SunSize: 0.049
+    - _SunSizeConvergence: 2.6
+    - _Switch2: 1
+    - _Switch3: 1
+    - _Switch4: 1
+    - _UVSec: 0
+    - _YawAngle: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.7647059, g: 0.71410036, b: 0.71410036, a: 1}
+    - _BottomColor: {r: 0.8897059, g: 0.52989835, b: 0.5373428, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.48918685, g: 0.7316898, b: 0.85294116, a: 1}
+    - _Color2: {r: 0.7574147, g: 0.7941176, b: 0.6656574, a: 1}
+    - _Color3: {r: 0.9123135, g: 0.8564014, b: 0.9705882, a: 1}
+    - _Color4: {r: 1, g: 0.98999995, b: 0.95, a: 1}
+    - _Direction1: {r: 0, g: 1, b: 0, a: 1}
+    - _Direction2: {r: 0.5, g: 1, b: 0, a: 1}
+    - _Direction3: {r: -0.3, g: -1, b: -0.2, a: 1}
+    - _Direction4: {r: 0, g: 1, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GroundColor: {r: 0.6747405, g: 0.9558824, b: 0.8395478, a: 1}
+    - _MiddleColor: {r: 0.6691177, g: 0.6051579, b: 0.6051579, a: 1}
+    - _NormalizedVector1: {r: 0, g: 1, b: 0, a: 0}
+    - _NormalizedVector2: {r: 0.4472136, g: 0.8944272, b: 0, a: 0}
+    - _NormalizedVector3: {r: -0.28221625, g: -0.94072086, b: -0.18814416, a: 0}
+    - _NormalizedVector4: {r: 0, g: 1, b: 0, a: 0}
+    - _SkyColor1: {r: 0.056549016, g: 0.28266677, b: 0.80784315, a: 1}
+    - _SkyColor2: {r: 1, g: 0.564, b: 0.6657332, a: 0}
+    - _SkyColor3: {r: 0.4007559, g: 0.3503961, b: 0.78039217, a: 0}
+    - _SkyTint: {r: 0.9264706, g: 0.6199178, b: 0.6199178, a: 1}
+    - _SunColor: {r: 0.8962264, g: 0.8646591, b: 0.5030705, a: 1}
+    - _SunVector: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint: {r: 0.8014706, g: 0.5244918, b: 0.5244918, a: 0.5}
+    - _TopColor: {r: 0.56747407, g: 0.6742463, b: 0.9411765, a: 1}
