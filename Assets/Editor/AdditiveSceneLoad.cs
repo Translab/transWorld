@@ -14,17 +14,7 @@ public class AdditiveSceneLoad : MonoBehaviour
 	static void OpenScene()
 	{
 		//Open the Scene in the Editor (do not enter Play Mode)
-		EditorSceneManager.OpenScene("Assets/Mengyu.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Cindy.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Jing.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Gustavo.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Yin.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Ehsan.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Tim.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Weidi.unity", OpenSceneMode.Additive);	
-		EditorSceneManager.OpenScene("Assets/Zhenyu.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Anshul.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Alexis.unity", OpenSceneMode.Additive);
-		EditorSceneManager.OpenScene("Assets/Enrica.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Scenes/Mengyu.unity", OpenSceneMode.Additive);
+		//need to add more
 	}
 }
