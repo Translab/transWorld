@@ -36,6 +36,14 @@
       "requirement": "optional"
     },
     {
+      "name": "/actions/default/in/TouchPad",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/TouchPos",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -67,7 +75,7 @@
   "action_sets": [
     {
       "name": "/actions/default",
-      "usage": "single"
+      "usage": "leftright"
     },
     {
       "name": "/actions/platformer",
@@ -112,7 +120,10 @@
       "/actions/buggybuddy/in/Brake": "Brake",
       "/actions/buggybuddy/in/Reset": "Reset",
       "/actions/platformer/in/Move": "Move",
-      "/actions/platformer/in/Jump": "Jump"
+      "/actions/platformer/in/Jump": "Jump",
+      "/actions/default/in/TouchPos": "touchpos",
+      "/actions/default/in/Touchpad": "touchpad",
+      "/actions/default/in/TouchPad": "touchpad"
     }
   ]
 }
