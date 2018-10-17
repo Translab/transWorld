@@ -2,7 +2,8 @@
 A world that integrates all individual contributions.
 
 ## Version Required:
-Unity 2018 2.9f1
+Unity 2018 2.9f1 --> upgraded to Unity 2018.2.12f1
+(You can use Unity Hub to manage versions on your computer) -- [Go to page of Unity Hub](https://store.unity.com/download?ref=personal).
 
 ## Libraries Reference:
 SteamVR 2.1
