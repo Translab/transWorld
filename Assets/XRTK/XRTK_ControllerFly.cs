@@ -40,7 +40,7 @@ public class XRTK_ControllerFly : MonoBehaviour {
 	public bool gravity = true; //check this if you want gravity to return back to the middle plane / terrain
 	
 	[Tooltip("a landing height is a height that you will return to, even if there is no actual terrain, typically 0 or mataches with the terrain / plane height")]
-	public float landingHeight = 0.0f; //typically 0 or matches with terrain / plane height
+	public float YlevelofTerrain = 0.0f; //typically 0 or matches with terrain / plane height
 	[Tooltip("determines how much your gravity acceleration is, if too high, you may not land properly")]
 	[Range(0,1)] public float gravityFactor = 0.05f; 
 	[Tooltip("tolerence of landing detection, can be less if your gravity isn't very strong")]
@@ -94,7 +94,7 @@ public class XRTK_ControllerFly : MonoBehaviour {
 
 
 		facing_direction = XRTK.ControllerStats.getControllerRotation(handComponent) * Vector3.forward;
-		landingDistanceReference = Mathf.Abs(player.trackingOriginTransform.position.y - landingHeight);
+		landingDistanceReference = Mathf.Abs(player.trackingOriginTransform.position.y - YlevelofTerrain);
 		//Debug.Log(landingDistanceReference + " distance");
 
 		//switch on ground status
@@ -110,8 +110,10 @@ public class XRTK_ControllerFly : MonoBehaviour {
 		// check collision status
 		if (collisionDetection) {
 			if (bodyCollider.Colliding) {
+				Debug.Log("bodyCollider.Colliding = " + bodyCollider.Colliding);
 				onObject = true;
-				bodyPositionColliding = player.trackingOriginTransform.position;
+				// bodyPositionColliding = player.trackingOriginTransform.position;
+				bodyPositionColliding = bodyCollider.CollisionPoint;
 
 			} else if (!bodyCollider.Colliding) {
 				onObject = false;
@@ -120,24 +122,35 @@ public class XRTK_ControllerFly : MonoBehaviour {
 		} else {
 			onObject = false;
 		}
-
+		Debug.Log(onObject + " on Object");
 		if (flying) {
+			//fly function
 			flyAcceleration = facing_direction;
 			if (flyAcceleration.magnitude > flyAccelerationMax) {
 				flyAcceleration = Vector3.ClampMagnitude (flyAcceleration, flyAccelerationMax);
 			}
 			flyVelocity += flyAcceleration * flySpeed * speedCompensation *triggerPressure;
-			player.trackingOriginTransform.position += flyVelocity;
+			
 
+			//collision compensation
 			if (onObject) {
-				player.trackingOriginTransform.position = bodyPositionColliding;
+				//temporary solution
+				//TO DO: improve the calculation
+				float angle = Vector3.Angle(flyVelocity, bodyPositionColliding - flyVelocity);
+				if (angle < 90){
+					flyVelocity = Vector3.Cross(flyVelocity, bodyPositionColliding - flyVelocity) * Mathf.Pow(angle / 90, 4);
+				}
+				
+				//TO DO: gravity test
 				if (departureFromLanding) {
 					player.trackingOriginTransform.position += flyVelocity;
 				}
 				//flyVelocity = Vector3.zero;
 			} 
-				
-			flyVelocity *= 0.5f; //not zeros but decays velocity, to leave some inertia
+			
+			player.trackingOriginTransform.position += flyVelocity;
+
+			flyVelocity *= 0.2f; //not zeros but decays velocity, to leave some inertia
 			flyAcceleration = Vector3.zero; //zeros acceleration
 		} else {
 			if (gravity) {
@@ -147,7 +160,7 @@ public class XRTK_ControllerFly : MonoBehaviour {
 					departureFromLanding = true;
 				}
 				if (!onGround && !onObject) {
-					landingPointReference = new Vector3 (player.trackingOriginTransform.position.x, landingHeight, player.trackingOriginTransform.position.z);
+					landingPointReference = new Vector3 (player.trackingOriginTransform.position.x, YlevelofTerrain, player.trackingOriginTransform.position.z);
 					gravityAcceleration = landingPointReference -player.trackingOriginTransform.position;
 					if (gravityAcceleration.magnitude > gravityAccelerationMax) {
 						gravityAcceleration = Vector3.ClampMagnitude (gravityAcceleration, gravityAccelerationMax);

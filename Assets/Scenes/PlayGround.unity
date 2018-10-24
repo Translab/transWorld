@@ -216,6 +216,10 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 13693334, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_Radius
+      value: 0.12
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11455280, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
     - {fileID: 5475726, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
@@ -240,9 +244,9 @@ MonoBehaviour:
   triggerValue: {fileID: 11400000, guid: 3c69ef1c07f752d479f63966ceeac223, type: 2}
   flySpeed: 1
   speedLogFactor: 2
-  collisionDetection: 0
+  collisionDetection: 1
   gravity: 0
-  landingHeight: 0
+  YlevelofTerrain: 0
   gravityFactor: 0.05
   landingThreshold: 0.1
   floatingEffect: 0
@@ -403,7 +407,7 @@ GameObject:
   - component: {fileID: 807064437}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
