@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4774276, g: 0.5443449, b: 0.59235775, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -252,6 +252,60 @@ MonoBehaviour:
   floatingEffect: 0
   floatingHeight: 0.003
   floatingIntensity: 1
+--- !u!1 &496000503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496000505}
+  - component: {fileID: 496000504}
+  m_Layer: 0
+  m_Name: Tacker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &496000504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496000503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095903fa4e5657b459b2c07eafb0cfae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eye: {fileID: 1470339078}
+  _material: {fileID: 2100000, guid: 3f4cc0e7eb05a874cb5bc9018aee62f8, type: 2}
+  _material_1: {fileID: 2100000, guid: 4cc80d609290e744db377d949393ae52, type: 2}
+  _material_2: {fileID: 2100000, guid: 64e2e84355d2192418371a6325288bf3, type: 2}
+  _material_3: {fileID: 2100000, guid: 794d1e2b50866e24e8748ed9e7f8c4a6, type: 2}
+  _material_4: {fileID: 2100000, guid: 51b07a8cf2cf22946a2549cc203353a6, type: 2}
+  _material_5: {fileID: 2100000, guid: 78231496c7ede534fb33965aeb1d99d7, type: 2}
+  _material_6: {fileID: 2100000, guid: 42c3e88d678611445801e23d99f62999, type: 2}
+  _material_7: {fileID: 2100000, guid: 03ff83b87ce0fc540a7269e139ee7385, type: 2}
+  _material_8: {fileID: 2100000, guid: 41ff02e3f09aa2f44a213160130c3e1e, type: 2}
+  _material_9: {fileID: 2100000, guid: 32c0e60ae8aecc7449e4a9ee93353644, type: 2}
+  _material_10: {fileID: 2100000, guid: ff94dd8cffd76b64b85764224bcae366, type: 2}
+  _material_11: {fileID: 2100000, guid: 49dec5181db0303429438815b50bb90e, type: 2}
+  _material_12: {fileID: 2100000, guid: 8f9ea26d22d0fbf469d3d3eeb6748235, type: 2}
+--- !u!4 &496000505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496000503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5254881, y: 0.7528995, z: 1.883661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526004443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 191996, guid: dc06161b6d97feb419f45f03b62e14b9,
@@ -797,6 +851,60 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ac470d3d909d645a6c89a4664b6849, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1885675905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1885675907}
+  - component: {fileID: 1885675906}
+  m_Layer: 0
+  m_Name: Tacker (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1885675906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885675905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095903fa4e5657b459b2c07eafb0cfae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eye: {fileID: 1470339078}
+  _material: {fileID: 2100000, guid: 33c8fecdb1dd841ceb3dcdebbc915a57, type: 2}
+  _material_1: {fileID: 0}
+  _material_2: {fileID: 0}
+  _material_3: {fileID: 0}
+  _material_4: {fileID: 0}
+  _material_5: {fileID: 0}
+  _material_6: {fileID: 0}
+  _material_7: {fileID: 0}
+  _material_8: {fileID: 0}
+  _material_9: {fileID: 0}
+  _material_10: {fileID: 0}
+  _material_11: {fileID: 0}
+  _material_12: {fileID: 0}
+--- !u!4 &1885675907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1885675905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5254881, y: 0.7528995, z: 1.883661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044452407
 GameObject:
   m_ObjectHideFlags: 0
