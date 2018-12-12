@@ -68,7 +68,10 @@
 		static half _Amplitude = 1;
 
 		float _Amount;
+		
 		void vert(inout appdata_full v) {
+			//UNITY_INITIALIZE_OUTPUT(appdata_full, v);
+
 			//float3 worldPos = mul(_object2World, v.vertex).xyz;
 			//v.vertex.xyz += v.normal *  sin(v.vertex.x * _Frequency + _Time.y) * _Amplitude;
 			v.vertex.xyz += v.normal *  sin(v.vertex.x * _Frequencyx + _Time.y) * _Amplitude;
